@@ -11,10 +11,18 @@ int main()
 			reverse = 0;
 			while (revprod > 0)
 			{
+				reverse = reverse * 10 + revprod % 10;
+				revprod /= 10;
+			}
+			if (reverse == product)
+			{
+				if (product > max)
+				{
+					max = product;
 
+				}
 
 			}
-
 		}
 
 
@@ -28,6 +36,6 @@ int main()
 
 
 
-
-
+	printf("%d", max);
+	return 0;
 }
