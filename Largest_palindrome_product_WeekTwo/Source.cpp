@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
-{
-	int x, y,product,revprod,reverse,max = 0;
+{ 
+	int x = 0,  y = 0, product = 0, revprod = 0, reverse = 0, max = 0;
 	for (x = 100; x < 1000; x++)
 	{
 		for (y = 100; y < 1000; y++)
@@ -24,18 +24,7 @@ int main()
 
 			}
 		}
-
-
 	}
-
-
-
-
-
-
-
-
-
 	printf("%d", max);
 	return 0;
 }
