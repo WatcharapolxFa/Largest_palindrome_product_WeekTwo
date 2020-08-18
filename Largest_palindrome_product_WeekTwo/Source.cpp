@@ -1,30 +1,28 @@
 #include<stdio.h>
 int main()
 { 
-	int num1 = 0 , num2=0, product = 0, revprod = 0, reverse = 0, max = 0;
+	int num1 = 0, num2 = 0, result = 0, revprod = 0, maximum = 0, recoil = 0;
 	for (num1 = 100; num1 < 1000 ;num1++)
 	{
 		for (num2 = 100; num2 <1000 ;num2++)
 		{
-			product = num1 * num2;
-			revprod = product;
-			reverse = 0;
+			result = num1 * num2;
+			revprod = result;
+			recoil = 0;
 			while (revprod > 0)
 			{
-				reverse = reverse * 10 + revprod % 10;
+				recoil= recoil* 10 + revprod % 10;
 				revprod /= 10;
 			}
-			if (reverse == product)
+			if (recoil == result)
 			{
-				if (product > max)
+				if (result > maximum)
 				{
-					max = product;
-
+					maximum = result;
 				}
-
 			}
 		}
 	}
-	printf("%d", max);
+	printf("%d", maximum);
 	return 0;
 }
